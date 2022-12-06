@@ -1,26 +1,45 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.fade-appear {
+    opacity: 0;
+    z-index: 1;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity 2000ms linear;
+}
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.img-wrapper > img{
+    object-fit: cover;
+    object-position: center;
+
+}
+.img-wrapper > .project-content{
+    position: absolute;
+    inset: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    background: transparent;
+    justify-content: center;
+    align-items: center
 }
 
-* {
-  box-sizing: border-box;
+.img-wrapper > img,
+.img-wrapper > .project-content{
+    transition: 200ms ease-in-out
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.img-wrapper:hover > img.my-blur{
+    filter: blur(3px);
+    filter: brightness(0.25);
 }
+.img-wrapper > .project-content.fade{
+    opacity: 0
+}
+.img-wrapper:hover > .project-content.fade{
+    opacity: 1
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
