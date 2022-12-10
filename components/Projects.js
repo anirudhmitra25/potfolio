@@ -19,7 +19,8 @@ export const Projects = (props) => {
         {projectItems.map((item) => (     
                 <div className="img-wrapper px-4 mt-5">
               <Image class="my-blur rounded-2xl" src={item.project}/>
-              <div className="project-content fade text-slate-50 mx-auto text-center my-3">
+              <div className="project-content fade text-slate-50 mx-auto text-center flex items-center justify-center">
+                <div className="">
                 <p className="md:text-lg text-sm px-5 font-semibold">{item.description}</p>
                 <div className="w-3/5 h-3/5 mx-auto">
                   <button onClick={()=>{
@@ -31,12 +32,11 @@ export const Projects = (props) => {
                 </div>
                 </div>
                 </div>
+                </div>
             
           )
         )}
       </div>
-      {/* </Carousel> */}
-      {/* </div> */}
     </div>
   );
 };

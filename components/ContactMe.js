@@ -2,6 +2,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 
 import React, { useState } from "react";
 import { ContactMeForm } from "./ContactMeForm";
+import { github_link, linkedIn_link, mail_link } from "../data/data";
 export const ContactMe = (props) => {
   const [showForm, setShowForm] = useState(false);
   return (
@@ -22,14 +23,14 @@ export const ContactMe = (props) => {
             please fill up the form below and let's talk.
           </p>
 
-          {
+          {!showForm && (
             <button
               onClick={() => setShowForm(!showForm)}
               class="bg-transparent hover:bg-cyan-500 text-white font-semibold hover:text-white py-2 px-4 border-2 border-blue-500 hover:border-transparent rounded-3xl mt-5"
             >
               Let's do this
             </button>
-          }
+          )}
         </div>
         {showForm && (
           <div className="flex justify-center mt-5 pb-20">
@@ -45,9 +46,21 @@ export const ContactMe = (props) => {
               : "text-4xl flex justify-center gap-16 py-3 text-gray-600 pt-44 pb-20"
           }
         >
-          <AiFillGithub className="text-white" />
-          <AiFillLinkedin className="text-white" />
-          <AiFillMail className="text-white" />
+          <AiFillGithub
+            onClick={() => {
+              window.open(github_link, "_blank", "noopener,noreferrer");
+            }}
+            className="text-white hover:transition duration-300 ease-in-out hover:scale-125 cursor-pointer"
+          />
+          <AiFillLinkedin
+            onClick={() => {
+              window.open(linkedIn_link, "_blank", "noopener,noreferrer");
+            }}
+            className="text-white hover:transition duration-300 ease-in-out hover:scale-125 cursor-pointer"
+          />
+          <a href="mailto:anirudhmitra25@gmail.com">
+            <AiFillMail className="text-white hover:transition duration-300 ease-in-out hover:scale-125 cursor-pointer" />
+          </a>
         </div>
       </div>
     </div>

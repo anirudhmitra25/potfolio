@@ -40,6 +40,20 @@
 .img-wrapper:hover > .project-content.fade{
     opacity: 1
 }
+
+.progress {
+    width: 80%;
+    animation: progress 2s;
+}
+@keyframes progress {
+    0%{
+        width: 0%
+    }
+    100%{
+        
+    }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

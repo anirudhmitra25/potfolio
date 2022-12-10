@@ -1,26 +1,26 @@
 import sortingVisualizer from "../public/Sorting-visualizer.png";
+import portfolio from "../public/portfolio.png";
 export const education = [
   {
     date: "Jul 2017 - Sept 2021",
     location: "Manipal Institute of Technology",
     title: "Btech in Information Technology",
     content: (
-      <p>
-        Describe your experience at school, what you learned, what useful skills
-        you have acquired etc.
-      </p>
+      <div>
+        Extra-curricular:
+        <ul className="list-disc mt-4 font-normal text-sm">
+          <li>Head of Human Resources, Photography Club Manipal</li>
+          <li>Organizer, Revels(Non-tech fest)</li>
+          <li>Organizer, Techtatva(Tech fest)</li>
+        </ul>
+      </div>
     ),
   },
   {
-    date: "",
+    date: "Higher Secondary",
     location: "Ryan International",
     title: "High School",
-    content: (
-      <p>
-        Describe your experience at school, what you learned, what useful skills
-        you have acquired etc.
-      </p>
-    ),
+    content: <p>10th board 8.1 CGPA, 12th Board 86 percentage</p>,
   },
 ];
 
@@ -146,7 +146,7 @@ export const skills = [
     skills: [
       {
         name: "Node.js",
-        level: 6,
+        level: 4,
       },
     ],
   },
@@ -171,24 +171,21 @@ export const projectItems = [
     project: sortingVisualizer,
     description:
       "Sorting Visualizer is a web app for visualizing a bunch of different sorting algorithms Like Bubble Sort, Insertion Sort, Merge Sort, Quick Sort with the functionality of (Speed Control) and (Array Size Control)",
-    source:"https://github.com/anirudhmitra25/Sorting-Visualizer",
-    preview:"https://sorting-visualizer-anirudh.netlify.app/"
+    source: "https://github.com/anirudhmitra25/Sorting-Visualizer",
+    preview: "https://sorting-visualizer-anirudh.netlify.app/",
   },
   {
-    projectName: "Spotify Music Player",
-    project: sortingVisualizer,
-    description: "A simple music player which displays lyrics of the currently playing music. Made using Spotify Api.",
-  },
-  {
-    projectName: "Spotify Music Player",
-    project: sortingVisualizer,
-    description: "Spotify",
-  },
-  {
-    projectName: "Spotify Music Player",
-    project: sortingVisualizer,
-    description: "Spotify",
+    projectName: "portfolio Website",
+    project: portfolio,
+    description:
+      "The personal website/portfolio of Anirudh Mitra. Built using Nextjs and tailwind",
   },
 ];
 
-export const resume_pdf = "https://drive.google.com/file/d/1fw9KODA63O1Pbl7dApwT8doTGGDBtbJB/view?usp=sharing";
+export const resume_pdf =
+  "https://drive.google.com/file/d/1fw9KODA63O1Pbl7dApwT8doTGGDBtbJB/view?usp=sharing";
+export const github_link = "https://github.com/anirudhmitra25";
+export const linkedIn_link =
+  "https://www.linkedin.com/in/anirudh-mitra-3105a31a9/";
+export const mail_link =
+  "https://mail.google.com/mail/?view=cm&fs=1&to=anirudhmitra25@gmail.com";
