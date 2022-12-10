@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  NETLIFY_NEXT_PLUGIN_SKIP:true,
 
 }
 
