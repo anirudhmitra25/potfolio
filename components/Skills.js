@@ -7,6 +7,12 @@ import SkillItem from "./SkillComponents/SkillItem";
 import { education, experience, skills } from "../data/data";
 import me from "../public/me.png";
 import { useInView } from "react-intersection-observer";
+
+const line_1 = " Since beginning my journey as a Software Developer 1.5 years ago,";
+const line_2="I've had the oppurtunity to work with Startups as well as MNCs, collaborated";
+const line_3="with alot of smart people to create products for both buisness and commercial use.";
+const line_4="I'm quietly confident, naturally curious, and perpetually working on";
+
 export const Skills = (props) => {
   const [ref, inView, entry] = useInView({
     /* Optional options */
@@ -27,14 +33,15 @@ export const Skills = (props) => {
               Hi, nice to meet you
             </h2>
             <p className="text-white md:text-lg lg:text-lg font-semibold sm:text-md text-md">
-              Since beginning my journey as a Software Developer 1.5 years ago,
-              <br></br>I've had the oppurtunity to work with Startups as well as
-              MNCs, collaborated
-              <br></br>with alot of smart people to create products for both
-              buisness and commercial use.
-              <br></br> I'm quietly confident, naturally curious, and
-              perpetually working on
-              <br></br>improving my chops one problem at a time.
+             {line_1}
+              <br></br>
+              {line_2}
+              <br></br>
+              {line_3}
+              <br></br> 
+              {line_4}
+              <br></br>
+              improving my chops one problem at a time.
             </p>
           </div>
         </div>
@@ -54,13 +61,13 @@ export const Skills = (props) => {
           <ResumeSection title="Skills">
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2" ref={ref}>
               {skills.map((skillgroup, index) => (
-                <div className="flex flex-col">
+                <div className="flex flex-col" key={index}>
                   <span className="text-center text-lg font-bold">
                     {skillgroup.name}
                   </span>
                   <div className="flex flex-col gap-y-2">
-                    {skillgroup.skills.map((item) => (
-                      <SkillItem skill={item} inView={inView} />
+                    {skillgroup.skills.map((item,index) => (
+                      <SkillItem key={index} skill={item} inView={inView} />
                     ))}
                   </div>
                 </div>

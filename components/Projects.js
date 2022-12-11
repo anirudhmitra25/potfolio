@@ -7,18 +7,20 @@ import { useState } from "react";
 import { AiFillPropertySafety } from "react-icons/ai";
 import { projectItems } from "../data/data";
 
+const line_1="Here are a few past projects I've worked on.";
+
 export const Projects = (props) => {
 
   return (
     <div ref={props.projectsRef} className="mt-20">
       <div className="text-center px-4">
         <h1 className="text-3xl font-semibold">My Recent Projects</h1>
-        <p className='text-xl mt-4'>Here are a few past projects I've worked on.</p>
+        <p className='text-xl mt-4'>{line_1}</p>
       </div>
       <div className="grid lg:grid-cols-2 lg:gap-4 md:grid-cols-2 md:gap-4 mt-10" >
-        {projectItems.map((item) => (     
-                <div className="img-wrapper px-4 mt-5">
-              <Image class="my-blur rounded-2xl" src={item.project}/>
+        {projectItems.map((item,key) => (     
+                <div className="img-wrapper px-4 mt-5" key={key}>
+              <Image alt="" class="my-blur rounded-2xl" src={item.project}/>
               <div className="project-content fade text-slate-50 mx-auto text-center flex items-center justify-center">
                 <div className="">
                 <p className="md:text-lg text-sm px-5 font-semibold">{item.description}</p>

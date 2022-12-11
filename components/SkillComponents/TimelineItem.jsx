@@ -1,6 +1,6 @@
 import {FC, memo} from 'react';
 
-const TimelineItem = memo(({item}) => {
+function TimelineItem({item}){
   const {title, date, location, content} = item;
   return (
     <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left px-5">
@@ -15,6 +15,6 @@ const TimelineItem = memo(({item}) => {
       {content}
     </div>
   );
-});
+}
 
 export default TimelineItem;

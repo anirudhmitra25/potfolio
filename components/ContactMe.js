@@ -3,6 +3,10 @@ import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import React, { useState } from "react";
 import { ContactMeForm } from "./ContactMeForm";
 import { github_link, linkedIn_link, mail_link } from "../data/data";
+
+const line_1="If you wanna get in touch, or just say hi,"
+const line_2="please fill up the form below and let's talk."
+const line_3="Let's do this"
 export const ContactMe = (props) => {
   const [showForm, setShowForm] = useState(false);
   return (
@@ -19,8 +23,8 @@ export const ContactMe = (props) => {
             Get in touch
           </h1>
           <p className="mt-5 md:p-8 text-white font-mono md:pl-10 md:pr-10 sm:pl-3 sm:pr-3 lg:text-2xl md:text-xl sm:text-lg text-lg px-4">
-            If you wanna get in touch, or just say hi,<br></br>
-            please fill up the form below and let's talk.
+            {line_1}<br/>
+            {line_2}
           </p>
 
           {!showForm && (
@@ -28,7 +32,7 @@ export const ContactMe = (props) => {
               onClick={() => setShowForm(!showForm)}
               class="bg-transparent hover:bg-cyan-500 text-white font-semibold hover:text-white py-2 px-4 border-2 border-blue-500 hover:border-transparent rounded-3xl mt-5"
             >
-              Let's do this
+              {line_3}
             </button>
           )}
         </div>

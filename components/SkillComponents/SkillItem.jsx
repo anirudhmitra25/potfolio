@@ -1,6 +1,6 @@
-import {memo, useMemo,useState,useEffect} from 'react';
+import {useMemo,useState,useEffect} from 'react';
 
-const SkillItem= memo(({skill,inView}) => {
+function SkillItem({skill,inView}){
 
   const [loaded,setLoaded]=useState(false);
 
@@ -21,6 +21,6 @@ const SkillItem= memo(({skill,inView}) => {
         </div>
       </div>
     );
-  });
+};
 
   export default SkillItem;
