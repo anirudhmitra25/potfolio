@@ -1,5 +1,3 @@
-// import webDev from '../public/webDev.png'
-import webdev from "../public/webdev.png";
 import Image from "next/image";
 import ResumeSection from "./SkillComponents/ResumeSection";
 import TimelineItem from "./SkillComponents/TimelineItem";
