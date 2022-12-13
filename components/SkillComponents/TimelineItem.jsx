@@ -1,4 +1,3 @@
-import {FC, memo} from 'react';
 
 function TimelineItem({item}){
   const {title, date, location, content} = item;
@@ -12,7 +11,9 @@ function TimelineItem({item}){
           <span className="flex-1 text-sm sm:flex-none">{date}</span>
         </div>
       </div>
+      <div className='text-start'>
       {content}
+      </div>
     </div>
   );
 }

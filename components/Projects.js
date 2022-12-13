@@ -19,11 +19,11 @@ export const Projects = (props) => {
       </div>
       <div className="grid lg:grid-cols-2 lg:gap-4 md:grid-cols-2 md:gap-4 mt-10" >
         {projectItems.map((item,key) => (     
-                <div className="img-wrapper px-4 mt-5" key={key}>
+                <div className="img-wrapper px-4 mt-5 drop-shadow-lg py-4" key={key}>
               <Image alt="" class="my-blur rounded-2xl" src={item.project}/>
               <div className="project-content fade text-slate-50 mx-auto text-center flex items-center justify-center">
                 <div className="">
-                <p className="md:text-lg text-sm px-5 font-semibold">{item.description}</p>
+                <p className="md:text-lg lg:text-lg text-xs px-5 font-semibold">{item.description}</p>
                 <div className="w-3/5 h-3/5 mx-auto">
                   <button onClick={()=>{
                      window.open(item.source,'_blank','noopener,noreferrer')

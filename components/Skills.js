@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 
 const line_1 = " Since beginning my journey as a Software Developer 1.5 years ago,";
 const line_2="I've had the oppurtunity to work with Startups as well as MNCs, collaborated";
-const line_3="with alot of smart people to create products for both buisness and commercial use.";
+const line_3="with lots of smart people to create products for both buisness and commercial use.";
 const line_4="I'm quietly confident, naturally curious, and perpetually working on";
 
 export const Skills = (props) => {
@@ -30,7 +30,7 @@ export const Skills = (props) => {
             <h2 className="text-white md:text-4xl lg:text-4xl font-semibold pt-2 text-3xl pb-3">
               Hi, nice to meet you
             </h2>
-            <p className="text-white md:text-lg lg:text-lg font-semibold sm:text-md text-md">
+            <p className="text-white md:text-lg lg:text-lg font-semibold sm:text-md text-md mt-4">
              {line_1}
               <br></br>
               {line_2}

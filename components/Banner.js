@@ -62,19 +62,19 @@ export default function Banner() {
     <section className="h-screen flex justify-center items-center -mt-8">
       <>
         <div className="text-center">
-          <h2 className="text-5xl text-cyan-500 font-medium md:text-7xl font-mono">
+          <h2 className="text-4xl text-cyan-500 font-medium md:text-7xl lg:text-7xl font-mono">
             Anirudh Mitra
           </h2>
           <div className="h-10 mb-3 mt-3">
             <h3
-              className="text-2xl font-medium font-mono py-2 md:text-3xl dark:text-white"
+              className="text-xl font-medium font-mono py-2 md:text-3xl dark:text-white"
               dataPeriod="1000"
               data-rotate={toRotate}
             >
               <span className="wrap text-cyan-500">{text}</span>
             </h3>
           </div>
-          <p className="text-md py-5 font-light leading-8 md:text-xl max-w-xl mx-auto text-cyan-500">
+          <p className="text-sm py-5 font-light leading-8 md:text-xl lg:text-xl max-w-xl mx-auto text-cyan-500">
             Passionate about changing the world with technology.
           </p>
           <div className="flex text-4xl gap-x-4 justify-center my-4 mb-8">

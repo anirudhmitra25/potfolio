@@ -7,7 +7,9 @@ export const education = [
     title: "Btech in Information Technology",
     content: (
       <div>
+        <h1 className="font-medium">
         Extra-curricular:
+        </h1>
         <ul className="list-disc mt-4 font-normal text-sm">
           <li>Head of Human Resources, Photography Club Manipal</li>
           <li>Organizer, Revels(Non-tech fest)</li>
