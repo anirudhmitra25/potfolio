@@ -181,6 +181,8 @@ export const projectItems = [
     project: portfolio,
     description:
       "The personal website/portfolio of Anirudh Mitra. Built using Nextjs and tailwind",
+      source: "https://github.com/anirudhmitra25/potfolio",
+      preview: null,
   },
 ];
 
