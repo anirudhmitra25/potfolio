@@ -172,7 +172,7 @@ export const projectItems = [
     projectName: "Sorting Visualizer",
     project: sortingVisualizer,
     description:
-      "Sorting Visualizer is a web app for visualizing a bunch of different sorting algorithms Like Bubble Sort, Insertion Sort, Merge Sort, Quick Sort with the functionality of (Speed Control) and (Array Size Control)",
+      "Sorting Visualizer is a web app for visualizing a bunch of different sorting algorithms, with the functionality of (Speed Control) and (Array Size Control)",
     source: "https://github.com/anirudhmitra25/Sorting-Visualizer",
     preview: "https://sorting-visualizer-anirudh.netlify.app/",
   },
