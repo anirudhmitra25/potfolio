@@ -187,7 +187,7 @@ export const projectItems = [
 ];
 
 export const resume_pdf =
-  "https://drive.google.com/file/d/1fw9KODA63O1Pbl7dApwT8doTGGDBtbJB/view?usp=sharing";
+  "https://drive.google.com/file/d/1rCbgoz1WQYO6NjyXJkKEetNwUMdNoU3q/view?usp=sharing";
 export const github_link = "https://github.com/anirudhmitra25";
 export const linkedIn_link =
   "https://www.linkedin.com/in/anirudh-mitra-3105a31a9/";
